@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html style="padding:20px">
+<head>
+  <meta charset="utf-8">
+  <title>ATAwP</title>
+  <script type="text/javascript">
+    document.write('<link rel="import" href="' + window.Alteryx.LibDir + '2/lib/includes.html">');
+  </script>
+</head>
+<body>
+	<label>XMSG("Select a field to analyze")</label>
+		<ayx data-ui-props = "{type: 'DropDown'}" data-item-props =
+			"{
+				dataName: 'FieldSelect',
+				dataType: 'FieldSelector',
+				anchorIndex:'0',
+				connectionIndex:'0'
+			}"
+		>
+		</ayx>
+	<script type="text/javascript">
+	
+    Alteryx.Gui.BeforeLoad = (manager, AlteryxDataItems, json) => {
+    }
+
+    Alteryx.Gui.AfterLoad = (manager) => {
+    }
+
+  </script>
+
+</body>
+</html>
